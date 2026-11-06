@@ -1,0 +1,65 @@
+import 'package:Flutter/material.dart''
+void main()
+{
+runApp(MyApp());
+}
+class MyApp extends StatelessWidget
+{
+@override
+Widget build(BuildContext context)
+{
+return MaterialApp(
+title:'FlutterDemo',
+theme:ThemeData(
+primarySwatch:Colors.blue,
+),
+home:MyHomePage(),
+);
+}
+}
+class _MyHomePageState extends  StatefulWidget
+{
+_MyHomePageState createState()=>_MyHomePageState();
+}
+class _MyHomePageState extends State<MyHomePage>
+{
+int_Counter=0;
+void_increamentCounter();
+setStatus((){
+_Counter++;
+)};
+}
+@override
+Widget build(BuildContext context)
+{
+return Scaffold(
+appBar:AppBar(
+title:'Stateful and Stateless Widgets';
+),
+body:Center,
+child:Column,
+mainAxisAlignment:MainAxisAlignment.Center;
+children<Widget>[
+Text(
+'this is the stateless widget';
+),
+SizedBox(height:10);
+Text(
+'This many times you have pressed the button';
+),
+SizedBox(height:10),
+Text(
+'$_Counter';
+style:Theme.of(Context).textTheme.headlineLarge,
+),
+],
+),
+),
+floatingActionButton:FloationgActionButton(
+OnPressed:_incrementCounter,
+tooltip:'incremnet',
+child:Icon(Icons.add),
+),
+);
+}
+}
